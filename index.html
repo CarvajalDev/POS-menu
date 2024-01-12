@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZePOS</title>
+
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body class="zepos-main-container-menu zepos-body-config">
+
+        <div class="zepos-main-menu-navbar">
+            
+            <div class="zepos-menu-navbar-options">
+                <p class="zepos-menu-navbar-options-title">Buenas tardes, Rosalía 👋🏼</p>
+
+                <div class="zepos-menu-navbar-options-container">
+
+                    <div class="zepos-component-badge-icons"> 
+                        <i class="material-symbols-rounded ">store</i>
+                        <span class="zepos-component-badge-icons-text">Tienda Masaryk</span>
+                        <i class="material-symbols-rounded zepos-component-icons-color-primary">cached</i>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2" height="42" viewBox="0 0 2 42" fill="none">
+                        <path d="M1 1L0.999998 41" stroke="#D9D9D9" stroke-width="0.75" stroke-linecap="round"/>
+                    </svg>
+
+                    <button id="showSettingsWindow" class="zepos-component-button-icon">
+                        <i class="material-symbols-rounded zepos-component-icons-color-primary">settings</i>
+                    </button>
+
+                    <div id="settingsWindow" class="zepos-component-window-settings">
+                        
+                            <div class="zepos-layout-settings-user-options">
+
+                                <div class="zepos-component-window-settings-user-manage">
+                                    <div class="zepos-component-card-modules-small-layout-horizontal-text">
+                                        <span class="zepos-component-avatar-icon">
+                                            <i class="material-symbols-rounded zepos-component-icons-color-primary">person</i>
+                                        </span>
+                                        <div class="zepos-component-card-modules-layout-user-name">
+                                            <p class="zepos-style-text-d-heading-h6">Rosalía Vila</p>
+                                        </div>
+                                        <div class="zepos-component-badge-default"> 
+                                            <span class="zepos-style-text-d-body-caption">Miembro</span>
+                                        </div>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="3" viewBox="0 0 346 2" fill="none">
+                                        <path d="M1 1L345 1" stroke="#D9D9D9" stroke-width="0.75" stroke-linecap="round"/>
+                                    </svg>
+                                    <button class="zepos-component-button-text-icon zepos-style-text-d-button-medium">
+                                        <i class="material-symbols-rounded zepos-component-icons-color-primary">group</i>
+                                        Cambiar de vendedor
+                                    </button>
+                                </div>
+                                <div class="zepos-layout-cards-modules-settings">
+                                    <div class="zepos-component-card-modules-small-layout-horizontal-options">
+                                        <span class="zepos-component-avatar-icon">
+                                            <i class="material-symbols-rounded zepos-component-icons-color-primary">add_business</i>
+                                        </span>
+                                        <div class="zepos-component-card-modules-layout-user-name">
+                                            <p class="zepos-style-text-d-heading-h6">Cambiar de tienda</p>
+                                        </div>
+                                        <i class="material-symbols-rounded zepos-component-icons-color-primary">chevron_right</i>
+                                    </div>
+    
+                                    <div class="zepos-component-card-modules-small-layout-horizontal-options">
+                                        <span class="zepos-component-avatar-icon">
+                                            <i class="material-symbols-rounded zepos-component-icons-color-primary">school</i>
+                                        </span>
+                                        <div class="zepos-component-card-modules-layout-user-name">
+                                            <p class="zepos-style-text-d-heading-h6">Ayuda y capacitación</p>
+                                        </div>
+                                        <i class="material-symbols-rounded zepos-component-icons-color-primary">chevron_right</i>
+                                    </div>
+    
+                                    <div class="zepos-component-card-modules-small-layout-horizontal-options">
+                                        <span class="zepos-component-avatar-icon">
+                                            <i class="material-symbols-rounded zepos-component-icons-color-primary">exit_to_app</i>
+                                        </span>
+                                        <div class="zepos-component-card-modules-layout-user-name">
+                                            <p class="zepos-style-text-d-heading-h6">Cerrar sesión de usuario</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                    
+                    </div>
+
+                    <button id="showAlertWindow" class="zepos-component-button-icon-badge">
+                        <i class="material-symbols-rounded zepos-component-icons-color-primary">mail</i>
+                        <span id="badge" class="zepos-component-notification-badge zepos-component-notification-badge-text">0</span>
+                    </button>
+
+                    <div id="alertWindow" class="zepos-component-window-alerts">
+
+                        <p class="zepos-style-text-d-heading-h4">Notificaciones</p>
+                        <div class="zepos-layout-notifications-all">
+
+                                <div class="zepos-component-card-notification">
+                                    <div class="zepos-component-card-notification-layout">
+                                        <span class="zepos-component-avatar-icon">
+                                            <i class="material-symbols-rounded">local_shipping</i>
+                                        </span>
+                                        <div class="zepos-component-card-notification-layout-text">
+                                            <p class="zepos-style-text-d-body-medium">El estado del pedido <b>MAT-REQ-2023-31ec5a92 </b> de la <b>tienda Masaryk</b> ha sido actualizado.</p>
+                                            <div class="zepos-component-notification-order-status-layout">
+                                                <div class="zepos-component-notification-order-status-state-layout">
+                                                    <div class="zepos-component-notification-order-status-state-fill"></div>
+                                                    <p class="zepos-style-text-d-body-xsmall">Pedido</p>
+                                                </div>
+                                                <div class="zepos-component-notification-order-status-state-layout">
+                                                    <div class="zepos-component-notification-order-status-state-fill"></div>
+                                                    <p class="zepos-style-text-d-body-xsmall">Aprobado</p>
+                                                </div>
+                                                <div class="zepos-component-notification-order-status-state-layout">
+                                                    <div class="zepos-component-notification-order-status-state-fill"></div>
+                                                    <p class="zepos-style-text-d-body-xsmall">preparando</p>
+                                                </div>
+                                                <div class="zepos-component-notification-order-status-state-layout">
+                                                    <div class="zepos-component-notification-order-status-state-none"></div>
+                                                    <p class="zepos-style-text-d-body-xsmall">En camino</p>
+                                                </div>
+                                                <div class="zepos-component-notification-order-status-state-layout">
+                                                    <div class="zepos-component-notification-order-status-state-none"></div>
+                                                    <p class="zepos-style-text-d-body-xsmall">Entregado</p>
+                                                </div>
+                                            </div>
+                                            <span class="zepos-style-text-d-button-medium">Hace 27 minutos</span>
+                                        </div>
+                                    </div>
+                                
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="3" viewBox="0 0 346 2" fill="none">
+                                        <path d="M1 1L345 1" stroke="#D9D9D9" stroke-width="0.75" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+
+                                
+
+                                <div class="zepos-component-card-notification">
+                                    <div class="zepos-component-card-notification-layout">
+                                        <span class="zepos-component-avatar-icon">
+                                            <i class="material-symbols-rounded">production_quantity_limits</i>
+                                        </span>
+                                        <div class="zepos-component-card-notification-layout-text">
+                                            <p class="zepos-style-text-d-body-medium">La cotización <b>QTN-220110f7ecqd0aa4b19</b> de la <b>tienda Masaryk</b> cuenta con el pago aprobado. No olvides terminar la orden de venta.</p>
+                                            <span class="zepos-style-text-d-button-medium">Hace 27 minutos</span>
+                                        </div>
+                                    </div>
+                                   
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="3" viewBox="0 0 346 2" fill="none">
+                                        <path d="M1 1L345 1" stroke="#D9D9D9" stroke-width="0.75" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+
+                                <div class="zepos-component-card-notification">
+                                    <div class="zepos-component-card-notification-layout">
+                                        <span class="zepos-component-avatar-icon">
+                                            <i class="material-symbols-rounded">store</i>
+                                        </span>
+                                        <div class="zepos-component-card-notification-layout-text">
+                                            <p class="zepos-style-text-d-body-medium">Se creó la orden <b>SAL-ORD-220110f7ecqd0aa4b19</b> en <b>Línea</b>. Ten todo listo para cuando el cliente llegue por sus productos.</p>
+                                            <span class="zepos-style-text-d-button-medium">Hace 1 hora</span>
+                                        </div>
+                                    </div>
+                                   
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="3" viewBox="0 0 346 2" fill="none">
+                                        <path d="M1 1L345 1" stroke="#D9D9D9" stroke-width="0.75" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+
+                                <div class="zepos-component-card-notification">
+                                    <div class="zepos-component-card-notification-layout">
+                                        <span class="zepos-component-avatar-icon">
+                                            <i class="material-symbols-rounded">package_2</i>
+                                        </span>
+                                        <div class="zepos-component-card-notification-layout-text">
+                                            <p class="zepos-style-text-d-body-medium">La cotización <b>QTN-220110f7ecqd0aa4b19</b> de la <b>tienda Masaryk</b> cuenta con el pago aprobado. No olvides terminar la orden de venta.</p>
+                                            <span class="zepos-style-text-d-button-medium">Hace 2 horas</span>
+                                        </div>
+                                    </div>
+                                   
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="3" viewBox="0 0 346 2" fill="none">
+                                        <path d="M1 1L345 1" stroke="#D9D9D9" stroke-width="0.75" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+
+                            <button class="zepos-component-button zepos-style-text-d-button-medium">Ver todas las notificaciones</button>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="zepos-layout-margin">
+            <div class="zepos-layout-section-title-cards-modules">
+                <p class="zepos-style-text-d-heading-h6">Tareas diarias</p>
+                <div class="zepos-layout-cards-modules-horizontal">
+                    <div class="zepos-component-card-modules-small">
+                        <div class="zepos-component-card-modules-small-layout-content">
+                            <span class="zepos-component-avatar-icon">
+                                <i class="material-symbols-rounded zepos-component-icons-color-primary">shopping_cart</i>
+                            </span>
+                            <div class="zepos-component-card-modules-small-layout-vertical-text">
+                                <p class="zepos-component-card-modules-small-layout-title zepos-style-text-d-heading-h6">Cotización y venta</p>
+                                <p class="zepos-component-card-modules-small-layout-title zepos-style-text-d-body-medium">Agrega items al carrito</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="zepos-component-card-modules-small">
+                        <div class="zepos-component-card-modules-small-layout-content">
+                            <span class="zepos-component-avatar-icon">
+                                <img src="assets/delivery_item.svg" alt="delivery item icon">
+                            </span>
+                            <div class="zepos-component-card-modules-small-layout-vertical-text">
+                                <p class="zepos-component-card-modules-small-layout-title zepos-style-text-d-heading-h6">Entregar productos</p>
+                                <p class="zepos-component-card-modules-small-layout-title zepos-style-text-d-body-medium">Da salida items vendidos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="zepos-component-card-modules-small">
+                        <div class="zepos-component-card-modules-small-layout-content">
+                            <span class="zepos-component-avatar-icon">
+                                <img src="assets/return_item.svg" alt="return item icon">
+                            </span>
+                            <div class="zepos-component-card-modules-small-layout-vertical-text">
+                                <p class="zepos-component-card-modules-small-layout-title zepos-style-text-d-heading-h6">Retornar productos</p>
+                                <p class="zepos-component-card-modules-small-layout-title zepos-style-text-d-body-medium">Regresa items a tu tienda </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="zepos-component-card-modules-small">
+                        <div class="zepos-component-card-modules-small-layout-content">
+                            <span class="zepos-component-avatar-icon">
+                                <i class="material-symbols-rounded zepos-component-icons-color-primary">box_add</i>
+                            </span>
+                            <div class="zepos-component-card-modules-small-layout-vertical-text">
+                                <p class="zepos-component-card-modules-small-layout-title zepos-style-text-d-heading-h6">Resurtir productos</p>
+                                <p class="zepos-component-card-modules-small-layout-title zepos-style-text-d-body-medium">Pide items para tu tienda</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="zepos-layout-section-title-cards-modules">
+                <p class="zepos-style-text-d-heading-h6">Módulos y gestión de tienda</p>
+                <div class="zepos-layout-cards-modules-vertical">
+    
+                    <div class="zepos-layout-cards-modules-horizontal">
+    
+                        <div class="zepos-component-card-modules-medium">
+                            <div class="zepos-component-card-modules-medium-layout-content">
+                                <span class="zepos-component-avatar-icon">
+                                    <i class="material-symbols-rounded zepos-component-icons-color-primary">person</i>
+                                </span>
+                                <div class="zepos-component-card-modules-small-layout-vertical-text">
+                                    <p class="zepos-component-card-modules-small-layout-title zepos-style-text-d-heading-h6 zepos-style-text-bold">Módulo de clientes</p>
+                                </div>
+                            </div>
+                            <div class="zepos-component-card-modules-layout-text">
+                                <p class="zepos-style-text-d-body-medium">Esta es una descripción</p>
+                            </div>
+                        </div>
+    
+                        <div class="zepos-component-card-modules-medium">
+                            <div class="zepos-component-card-modules-medium-layout-content">
+                                <span class="zepos-component-avatar-icon">
+                                    <i class="material-symbols-rounded zepos-component-icons-color-primary">storefront</i>
+                                </span>
+                                <div class="zepos-component-card-modules-small-layout-vertical-text">
+                                    <p class="zepos-component-card-modules-small-layout-title zepos-style-text-d-heading-h6 zepos-style-text-bold">Módulo de tiendas</p>
+                                </div>
+                            </div>
+                            <div class="zepos-component-card-modules-layout-text">
+                                <p class="zepos-style-text-d-body-medium">Esta es una descripción</p>
+                            </div>
+                        </div>
+    
+                        <div class="zepos-component-card-modules-medium">
+                            <div class="zepos-component-card-modules-medium-layout-content">
+                                <span class="zepos-component-avatar-icon">
+                                    <i class="material-symbols-rounded zepos-component-icons-color-primary">Inventory_2</i>
+                                </span>
+                                <div class="zepos-component-card-modules-small-layout.vertical-text">
+                                    <p class="zepos-component-card-modules-small-layout-title zepos-style-text-d-heading-h6 zepos-style-text-bold">Módulo de inventario</p>
+                                </div>
+                            </div>
+                            <div class="zepos-component-card-modules-layout-text">
+                                <p class="zepos-style-text-d-body-medium">Esta es una descripción</p>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <div class="zepos-layout-cards-modules-horizontal">
+                        
+                        <div class="zepos-component-card-modules-medium">
+                            <div class="zepos-component-card-modules-medium-layout-content">
+                                <span class="zepos-component-avatar-icon">
+                                    <i class="material-symbols-rounded zepos-component-icons-color-primary">local_shipping</i>
+                                </span>
+                                <div class="zepos-component-card-modules-small-layout-vertical-text">
+                                    <p class="zepos-component-card-modules-small-layout-title zepos-style-text-d-heading-h6 zepos-style-text-bold">Recepción de Mercancía</p>
+                                </div>
+                            </div>
+                            <div class="zepos-component-card-modules-layout-text">
+                                <p class="zepos-style-text-d-body-medium">Esta es una descripción</p>
+                            </div>
+                        </div>
+    
+                        <div class="zepos-component-card-modules-medium">
+                            <div class="zepos-component-card-modules-medium-layout-content">
+                                <span class="zepos-component-avatar-icon">
+                                    <i class="material-symbols-rounded zepos-component-icons-color-primary">warehouse</i>
+                                </span>
+                                <div class="zepos-component-card-modules-small-layout-vertical-text">
+                                    <p class="zepos-component-card-modules-small-layout-title zepos-style-text-d-heading-h6 zepos-style-text-bold">Retornos a bodega</p>
+                                </div>
+                            </div>
+                            <div class="zepos-component-card-modules-layout-text">
+                                <p class="zepos-style-text-d-body-medium">Esta es una descripción</p>
+                            </div>
+                        </div>
+    
+                        <div class="zepos-component-card-modules-medium">
+                            <div class="zepos-component-card-modules-medium-layout-content">
+                                <span class="zepos-component-avatar-icon">
+                                    <i class="material-symbols-rounded zepos-component-icons-color-primary">campaign</i>
+                                </span>
+                                <div class="zepos-component-card-modules-small-layout-vertical-text">
+                                    <p class="zepos-component-card-modules-small-layout-title zepos-style-text-d-heading-h6 zepos-style-text-bold">Alertas y notificaciones</p>
+                                </div>
+                            </div>
+                            <div class="zepos-component-card-modules-layout-text">
+                                <p class="zepos-style-text-d-body-medium">Esta es una descripción</p>
+                            </div>
+                        </div>
+    
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+        
+
+</body>
+
+<script>
+    
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const showSettingsWindow = document.getElementById('showSettingsWindow');
+        const settingsWindow = document.getElementById('settingsWindow');
+
+        const showAlertWindow = document.getElementById('showAlertWindow');
+        const alertWindow = document.getElementById('alertWindow');
+        const badge = document.getElementById('badge');
+
+        // Settings window
+        showSettingsWindow.addEventListener('click', function (event) {
+            event.stopPropagation();
+            if (settingsWindow.style.display === 'block') {
+            closeSettingsWindows();
+            
+            } else {
+                settingsWindow.style.display = 'block';
+
+            document.addEventListener('click', closeSettingsWindowOutsideClick);
+            }
+
+            showSettingsWindow.classList.add('zepos-component-button-icon-active');
+        });
+
+        /*closeStWindow.addEventListener('click', function () {
+            closeSettingsWindows();
+        });*/
+
+        function closeSettingsWindows() {
+            settingsWindow.style.display = 'none';
+            document.removeEventListener('click', closeSettingsWindowOutsideClick);
+            showSettingsWindow.classList.remove('zepos-component-button-icon-active');
+        }
+
+        function closeSettingsWindowOutsideClick(event) {
+            if (!settingsWindow.contains(event.target) && event.target !== showSettingsWindow) {
+                closeSettingsWindows();
+            }
+            
+        }
+
+        // Notification window
+
+        function updateBadge() {
+            const alertNumbers = alertWindow.querySelectorAll('.zepos-component-card-notification').length;
+            badge.textContent = alertNumbers;
+        }
+
+        updateBadge();
+
+        showAlertWindow.addEventListener('click', function (event) {
+            event.stopPropagation();
+            if (alertWindow.style.display === 'block') {
+            closeAlertWindow();
+            } else {
+                alertWindow.style.display = 'block';
+
+            document.addEventListener('click', closeAlertWindowOutsideClick);
+            }
+
+            badge.textContent = '0';
+            badge.style.display = 'none';
+            showAlertWindow.classList.add('zepos-component-button-icon-badge-active');
+
+        });
+
+        /*closeAlWindow.addEventListener('click', function () {
+            closeAlertWindow();
+        });*/
+
+        function closeAlertWindow() {
+            alertWindow.style.display = 'none';
+            document.removeEventListener('click', closeAlertWindowOutsideClick);
+            showAlertWindow.classList.remove('zepos-component-button-icon-badge-active');
+        }
+
+        function closeAlertWindowOutsideClick(event) {
+            if (!alertWindow.contains(event.target) && event.target !== showAlertWindow) {
+                closeAlertWindow();
+            }
+        }
+
+
+
+        });
+</script>
+</html>
