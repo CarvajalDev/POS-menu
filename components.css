@@ -64,6 +64,18 @@ p{
     line-height: 14px; /* 100% */
 }
 
+.zepos-style-text-d-button-small{
+    color: var(--ze-primary-300, #FFF);
+    text-align: center;
+
+    /* ze/text/font/d/button/medium */
+    font-family: Helvetica Neue;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px; /* 100% */
+}
+
 .zepos-style-text-d-body-caption{
     color: var(--ze-primary-50, #231F20);
 
@@ -137,8 +149,8 @@ p{
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
-    margin-top: 32px;
+    gap: 12px;
+    margin-top: 24px;
 }
 
 .zepos-menu-navbar-options-container{
@@ -150,7 +162,7 @@ p{
 .zepos-layout-cards-modules-horizontal{
     display: flex;
     align-items: flex-start;
-    gap: 16px;
+    gap: 12px;
     align-self: stretch;
 }
 
@@ -193,6 +205,13 @@ p{
     gap: 12px;
     align-self: stretch;
     margin-top: 24px;
+}
+
+.zepos-component-card-notification-layout-buttons{
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
 }
 
 /*     Badge Component       */
@@ -251,6 +270,43 @@ p{
 
 
 /*           Button Component            */
+.zepos-component-button-small-fill{
+    display: flex;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    flex: 1 0 0;
+
+    border-radius: 8px;
+    background: var(--ze-secondary-300, #005CB9);
+    border: none;
+    cursor:pointer;
+}
+
+.zepos-component-button-small-fill:hover{
+    opacity: 70%;
+}
+
+.zepos-component-button-small-outlined{
+    display: flex;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    flex: 1 0 0;
+
+    border-radius: 8px;
+    border: 1px solid var(--ze-neutral-400, #D9D9D9);
+    background: transparent;
+    cursor:pointer;
+}
+
+.zepos-component-button-small-outlined:hover{
+    border: 1px solid var(--ze-secondary-300, #005CB9);
+    background-color: rgba(215, 226, 251, 0.2);
+}
+
 .zepos-component-button{
     display: flex;
     height: 48px;
@@ -601,8 +657,7 @@ p{
 
 .zepos-component-card-notification-layout-message{
     border-radius: 8px;
-    background: var(--ze-tertiary-100, #FFD7DB);
-    color: var(--ze-primary-50, #231F20);
+    background: var(--ze-neutral-100, #F8F9F9);
 }
 
 .zepos-component-card-notification-layout-text{
@@ -666,5 +721,10 @@ p{
     }
     .zepos-layout-section-title-cards-modules{
         margin-top: 24px;
+        gap: 12px;
+    }
+    .zepos-component-card-modules-medium{
+        padding: 16px;
+        gap: 12px;
     }
 }

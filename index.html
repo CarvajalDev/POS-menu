@@ -100,6 +100,26 @@
                         <p class="zepos-style-text-d-heading-h4">Notificaciones</p>
                         <div class="zepos-layout-notifications-all">
 
+                            <div class="zepos-component-card-notification">
+                                <div id="alertMessage" class="zepos-component-card-notification-layout zepos-component-card-notification-layout-message">
+                                    <span class="zepos-component-avatar-icon">
+                                        <i class="material-symbols-rounded">campaign</i>
+                                    </span>
+                                    <div class="zepos-component-card-notification-layout-text">
+                                        <p class="zepos-style-text-d-body-medium">¡Atención tiendas! Se acaba de actualizar las políticas y promociones en 4x2 almohadas, ya que se acabó el presupuesto y desde hoy no se deberá ofrecer a los clientes esta promo.</p>
+                                        <span class="zepos-style-text-d-button-medium">Hace 7 minutos</span>
+                                        <div class="zepos-component-card-notification-layout-buttons">
+                                            <button id="buttonView" class="zepos-component-button-small-fill zepos-style-text-d-button-small">Leer mensaje</button>
+                                            <button id="buttonRead" onclick="messageViewed()" class="zepos-component-button-small-outlined zepos-style-text-d-button-medium">Marcar como leído</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="3" viewBox="0 0 346 2" fill="none">
+                                    <path d="M1 1L345 1" stroke="#D9D9D9" stroke-width="0.75" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+
                                 <div class="zepos-component-card-notification">
                                     <div class="zepos-component-card-notification-layout">
                                         <span class="zepos-component-avatar-icon">
@@ -136,25 +156,7 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="3" viewBox="0 0 346 2" fill="none">
                                         <path d="M1 1L345 1" stroke="#D9D9D9" stroke-width="0.75" stroke-linecap="round"/>
                                     </svg>
-                                </div>
-
-                                <div class="zepos-component-card-notification">
-                                    <div class="zepos-component-card-notification-layout zepos-component-card-notification-layout-message">
-                                        <span class="zepos-component-avatar-icon">
-                                            <i class="material-symbols-rounded">local_shipping</i>
-                                        </span>
-                                        <div class="zepos-component-card-notification-layout-text">
-                                            <p class="zepos-style-text-d-body-medium">¡Atención tiendas! Se acaba de actualizar las políticas y promociones en 4x2 almohadas, ya que se acabó el presupuesto y desde hoy no se deberá ofrecer a los clientes esta promo.</p>
-                                            <span class="zepos-style-text-d-button-medium">Hace 27 minutos</span>
-                                        </div>
-                                    </div>
-                                
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="3" viewBox="0 0 346 2" fill="none">
-                                        <path d="M1 1L345 1" stroke="#D9D9D9" stroke-width="0.75" stroke-linecap="round"/>
-                                    </svg>
-                                </div>
-
-                                
+                                </div>                                
 
                                 <div class="zepos-component-card-notification">
                                     <div class="zepos-component-card-notification-layout">
@@ -388,7 +390,7 @@
                                 <span class="zepos-component-avatar-icon">
                                     <i class="material-symbols-rounded zepos-component-icons-color-primary">north_east</i>
                                 </span>
-                                    <p class="zepos-component-card-modules-small-layout-title zepos-style-text-d-heading-h6 zepos-style-text-align-center">Link a ZeCore</p>
+                                    <p class="zepos-component-card-modules-small-layout-title zepos-style-text-d-heading-h6 zepos-style-text-align-center">Crea un ticket</p>
                             </div>
                             <div class="zepos-component-card-modules-layout-text">
 
@@ -400,7 +402,7 @@
                                 <span class="zepos-component-avatar-icon">
                                     <i class="material-symbols-rounded zepos-component-icons-color-primary">north_east</i>
                                 </span>
-                                    <p class="zepos-component-card-modules-small-layout-title zepos-style-text-d-heading-h6 zepos-style-text-align-center">Link a ZeCore</p>
+                                    <p class="zepos-component-card-modules-small-layout-title zepos-style-text-d-heading-h6 zepos-style-text-align-center">Sube facturas</p>
                             </div>
                             <div class="zepos-component-card-modules-layout-text">
 
@@ -455,6 +457,16 @@
         const showAlertWindow = document.getElementById('showAlertWindow');
         const alertWindow = document.getElementById('alertWindow');
         const badge = document.getElementById('badge');
+
+        // Alert Viewd
+        messageViewed = () => {
+            const cardBg = document.getElementById("alertMessage");
+            const hideButton1 = document.getElementById('buttonView');
+            const hideButton2 = document.getElementById('buttonRead');
+            cardBg.classList.remove('zepos-component-card-notification-layout-message');
+            hideButton1.style.display = 'none';
+            hideButton2.style.display = 'none';
+        }
 
         // Settings window
         showSettingsWindow.addEventListener('click', function (event) {
