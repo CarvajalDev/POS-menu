@@ -728,3 +728,27 @@ p{
         gap: 12px;
     }
 }
+
+@media screen and (min-width: 1560px) {
+    .zepos-layout-margin {
+        margin: 0px 96px;
+    }
+    .zepos-main-menu-navbar{
+        padding: 20px 96px;
+        background: url(./assets/gradient_background_large.svg), lightgray 50% / cover no-repeat;
+    }
+    .zepos-component-window-alerts{
+        right: 96px;
+    }
+    .zepos-component-window-settings{
+        right: 96px;
+    }
+    .zepos-layout-section-title-cards-modules{
+        margin-top: 40px;
+        gap: 18px;
+    }
+    .zepos-component-card-modules-medium{
+        padding: 32px;
+        gap: 18px;
+    }
+}
