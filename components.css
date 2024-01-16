@@ -1,3 +1,7 @@
+:root {
+    font-family: "Helvetica Neue", Arial, -apple-system, Roboto, "Helvetica", Sans-serif;
+}
+
 .zepos-body-config{
     height: 100vh;
     margin: 0;
