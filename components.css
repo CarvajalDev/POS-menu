@@ -441,6 +441,7 @@ p{
     border-radius: 8px;
     border: 1px solid var(--ze-neutral-300, #EEE);
     background: var(--ze-primary-300, #FFF);
+    cursor: pointer;
 }
 
 .zepos-component-card-modules-small{
