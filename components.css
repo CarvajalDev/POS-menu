@@ -1,7 +1,3 @@
-:root {
-    font-family: "Helvetica Neue", Arial, -apple-system, Roboto, "Helvetica", Sans-serif;
-}
-
 .zepos-body-config{
     height: 100vh;
     margin: 0;
@@ -19,84 +15,73 @@ p{
 
 .zepos-style-text-d-heading-h4{
     color: var(--ze-primary-50, #231F20);
-    /* ze/text/font/d/heading/h4 */
-    font-family: Helvetica Neue;
+    font-family: var(--brand-typography-font2);
     font-size: 24px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 24px; /* 100% */
+    font-weight: var(--font-weight-bold);
+    line-height: 24px;
 }
 
 .zepos-style-text-d-heading-h6{
     color: var(--ze-primary-50, #231F20);
-
-    /* ze/text/font/d/heading/h6 */
-    font-family: Helvetica Neue;
-    font-size: 16px;
+    font-family: var(--brand-typography-font2);
+    font-size: var(--font-size-d-h6);
     font-style: normal;
-    font-weight: 500;
-    line-height: 24px; /* 150% */
+    font-weight: var(--font-weight-medium);
+    line-height: 24px;
 }
 
 .zepos-style-text-d-body-medium{
     color: var(--ze-neutral-600, #5C5C5C);
-
-    /* ze/text/font/d/body/medium */
-    font-family: Helvetica Neue;
-    font-size: 14px;
+    font-family: var(--brand-typography-font2);
+    font-size: var(--font-size-d-p-medium);
     font-style: normal;
-    font-weight: 400;
-    line-height: 18px; /* 171.429% */
+    font-weight: var(--font-weight-regular);
+    line-height: 18px;
 }
 
 .zepos-style-text-d-body-xsmall{
     color: var(--ze-primary-50, #231F20);
-    font-family: Helvetica Neue;
+    font-family: var(--brand-typography-font2);
     font-size: 11px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: normal;
 }
 
 .zepos-style-text-d-button-medium{
     color: var(--ze-secondary-300, #005CB9);
     text-align: center;
-
-    /* ze/text/font/d/button/medium */
-    font-family: Helvetica Neue;
-    font-size: 14px;
+    font-family: var(--brand-typography-font2);
+    font-size: var(--font-size-d-p-medium);
     font-style: normal;
-    font-weight: 500;
-    line-height: 14px; /* 100% */
+    font-weight: var(--font-weight-medium);
+    line-height: 14px;
 }
 
 .zepos-style-text-d-button-small{
     color: var(--ze-primary-300, #FFF);
     text-align: center;
-
-    /* ze/text/font/d/button/medium */
-    font-family: Helvetica Neue;
-    font-size: 14px;
+    font-family: var(--brand-typography-font2);
+    font-size: var(--font-size-d-p-medium);
     font-style: normal;
-    font-weight: 500;
-    line-height: 14px; /* 100% */
+    font-weight: var(--font-weight-medium);
+    line-height: 14px;
 }
 
 .zepos-style-text-d-body-caption{
     color: var(--ze-primary-50, #231F20);
-
-    /* ze/text/font/d/body/caption */
-    font-family: Helvetica Neue;
+    font-family: var(--brand-typography-font2);
     font-size: 10px;
     font-style: italic;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     line-height: normal;
 }
 
 .zepos-style-text-bold{
     font-style: normal;
-    font-weight: 600;
-    line-height: 24px; /* 150% */
+    font-weight: var(--font-weight-semibold);
+    line-height: 24px;
     letter-spacing: 0.32px;
 }
 
@@ -142,12 +127,11 @@ p{
 
 .zepos-menu-navbar-options-title{
     color: var(--ze-primary-50, #231F20);
-    /* ze/text/font/d/heading/h4 */
-    font-family: Helvetica Neue;
+    font-family: var(--brand-typography-font2);
     font-size: 24px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 24px; /* 100% */
+    font-weight: var(--font-weight-bold);
+    line-height: 24px;
 }
 
 .zepos-layout-section-title-cards-modules{
@@ -249,13 +233,11 @@ p{
 
 .zepos-component-badge-icons-text{
     color: var(--ze-primary-50, #231F20);
-
-    /* ze/text/font/d/button/regular */
-    font-family: Helvetica Neue;
-    font-size: 16px;
+    font-family: var(--brand-typography-font2);
+    font-size: var(--font-size-d-h6);
     font-style: normal;
-    font-weight: 500;
-    line-height: 16px; /* 100% */
+    font-weight: var(--font-weight-medium);
+    line-height: 16px;
 }
 
 /*    Notification Badge Component       */
@@ -407,12 +389,10 @@ p{
 
 .zepos-component-notification-badge-text{
     color: var(--ze-primary-300, #FFF);
-
-    /* ze/text/font/d/body/small */
-    font-family: Helvetica Neue;
+    font-family: var(--brand-typography-font2);
     font-size: 12px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
 }
 
 /*      Avatar Component       */
