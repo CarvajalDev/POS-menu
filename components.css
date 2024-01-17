@@ -85,6 +85,15 @@ p{
     letter-spacing: 0.32px;
 }
 
+.zepos-style-text-alert-message{
+    color: var(--ze-primary-50, #231F20);
+    font-family: var(--brand-typography-font2);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
 .zepos-style-text-align-center{
     text-align: center;
 }
