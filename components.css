@@ -324,7 +324,7 @@ p{
     background-color: rgba(215, 226, 251, 0.2);
 }
 
-/*     Button text & Icon Component       */
+/*         Button text & Icon Component       */
 .zepos-component-button-text-icon{
     display: flex;
     height: 48px;
@@ -346,7 +346,7 @@ p{
 }
 
 
-/*     Button Icon Component       */
+/*        Button Icon Component       */
 .zepos-component-button-icon{
     display: flex;
     width: 40px;
@@ -404,7 +404,7 @@ p{
     font-weight: var(--font-weight-medium);
 }
 
-/*      Avatar Component       */
+/*         Avatar Component       */
 
 .zepos-component-avatar-icon{
     display: flex;
@@ -419,7 +419,7 @@ p{
 }
 
 
-/*      Card modules small Component       */
+/*        Card modules small Component       */
 .zepos-component-card-modules-xsmall{
     display: flex;
     padding: 12px;
@@ -428,7 +428,6 @@ p{
     align-items: center;
 
     border-radius: 8px;
-    /*border: 1px solid var(--ze-neutral-300, #EEE);*/
     background: var(--ze-primary-300, #FFF);
     cursor: pointer;
 }
@@ -442,7 +441,6 @@ p{
     flex: 1 0 0;
 
     border-radius: 8px;
-    /*border: 1px solid var(--ze-neutral-300, #EEE);*/
     background: var(--ze-neutral-50, #FFF);
     cursor: pointer;
 }
@@ -469,7 +467,6 @@ p{
     align-self: stretch;
 
     border-radius: 8px;
-    /*border: 1px solid var(--ze-neutral-300, #EEE);*/
     background: var(--ze-neutral-50, #FFF);
     cursor: pointer;
 }
