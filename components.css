@@ -650,7 +650,7 @@ p{
 
 .zepos-component-card-notification-layout-message{
     border-radius: 8px;
-    background: var(--ze-neutral-100, #F8F9F9);
+    background:#dfe7fa;
 }
 
 .zepos-component-card-notification-layout-text{
